@@ -14,16 +14,22 @@ private:
 public: 
 	UnlimitedNumber(string);
 
-
 	~UnlimitedNumber();
 
-
 	string getBaseValue();
-
 
 	void setBaseValue(string value_);
 
 	int getDigitsNumber();
 
-	UnlimitedNumber operator+(const UnlimitedNumber&) const;
+	UnlimitedNumber operator+(UnlimitedNumber& const) const;
+
+	UnlimitedNumber operator-(UnlimitedNumber& const) const;
+
+	bool operator>(UnlimitedNumber const&);
+
+	bool operator<(UnlimitedNumber const&);
+
+	friend std::ostream& operator<< (std::ostream &os, const UnlimitedNumber &x);
 };
+

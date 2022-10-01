@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Task 1\Task1.cpp" />
-    <ClCompile Include="..\Task 3\Task3.cpp" />
     <ClCompile Include="GitHubProject.cpp" />
   </ItemGroup>
   <ItemGroup>

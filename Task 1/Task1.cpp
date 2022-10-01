@@ -45,7 +45,7 @@ int UnlimitedNumber::getDigitsNumber()
 	return digits_number;
 }
 
-UnlimitedNumber UnlimitedNumber::operator+ (const UnlimitedNumber& other_value)const 
+UnlimitedNumber UnlimitedNumber::operator+ (UnlimitedNumber& const other_value)const 
 {
 	string result_string = "";
 	if (digits_number >= other_value.digits_number) 
@@ -116,5 +116,47 @@ UnlimitedNumber UnlimitedNumber::operator+ (const UnlimitedNumber& other_value)c
 	}
 	reverse(result_string.begin(), result_string.end());
 	return UnlimitedNumber(result_string);
+}
+
+UnlimitedNumber UnlimitedNumber::operator- (UnlimitedNumber& const other_value)const 
+{
+	return UnlimitedNumber("");
+}
+
+bool UnlimitedNumber::operator>(UnlimitedNumber const& rv)
+{
+	if (digits_number > rv.digits_number) 
+	{
+		return true;
+	}
+	else if (rv.digits_number > digits_number) 
+	{
+		return false;
+	}
+	else 
+	{
+		for (int i = 0; i < digits_number; ++i) 
+		{
+			if (base_value[i] > rv.base_value[i]) 
+			{
+				return true;
+			}
+			else if (rv.base_value[i] > base_value[i]) 
+			{
+				return false;
+			}
+		}
+		return false;
+	}
+}
+
+bool UnlimitedNumber::operator<(UnlimitedNumber const& rv)
+{
+	return !this->operator>(rv);
+}
+
+std::ostream& operator<< (std::ostream& os, const UnlimitedNumber& x) {
+	os << x.base_value;
+	return os;
 }
 
