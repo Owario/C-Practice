@@ -127,13 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Task 1\Task1.cpp" />
+    <ClCompile Include="..\Task 3\Task3.cpp" />
     <ClCompile Include="GitHubProject.cpp" />
-    <ClCompile Include="Task1.cpp" />
-    <ClCompile Include="Task3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="unlimitednum.h" />
-    <ClInclude Include="prioritystack.h" />
+    <ClInclude Include="..\Task 1\unlimitednum.h" />
+    <ClInclude Include="..\Task 3\prioritystack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

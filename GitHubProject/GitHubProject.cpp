@@ -1,6 +1,6 @@
 ﻿#include <iostream>
-#include "prioritystack.h"
-#include "unlimitednum.h"
+#include "../Task 3/prioritystack.h"
+#include "../Task 1/unlimitednum.h"
 using namespace std;
 
 int main()
