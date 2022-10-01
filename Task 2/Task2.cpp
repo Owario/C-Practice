@@ -6,77 +6,75 @@ using namespace std;
 string FizzBuzzEnjoyer::FizzBuzzFunc()
 {
 	static string result_string = "";
+	string final_string = "";
 
 	for (int i = 1; i < 100; ++i)
 	{
-		if (i % 15 == 0)
+		final_string = "";
+
+		if (i % 3 == 0)
 		{
-			result_string += "FizzBuzz ";
-			continue;
+			final_string += "Fizz";
 		}
-		else if (i % 5 == 0)
+		if (i % 5 == 0)
 		{
-			result_string += "Buzz ";
+			final_string += "Buzz";
 		}
-		else if (i % 3 == 0)
+		if (final_string == "")
 		{
-			result_string += "Fizz ";
+			final_string = to_string(i);
 		}
-		else
-		{
-			result_string += to_string(i) + " ";
-		}
+		result_string += final_string + " ";
 	}
 	return result_string;
 }
 
 void FizzBuzzEnjoyer::FizzBuzzParamFunc(string& result_string) 
 {
+	string final_string = "";
+
 	for (int i = 1; i < 100; ++i)
 	{
-		if (i % 15 == 0)
+		final_string = "";
+
+		if (i % 3 == 0)
 		{
-			result_string += "FizzBuzz ";
-			continue;
+			final_string += "Fizz";
 		}
-		else if (i % 5 == 0)
+		if (i % 5 == 0)
 		{
-			result_string += "Buzz ";
+			final_string += "Buzz";
 		}
-		else if (i % 3 == 0)
+		if (final_string == "")
 		{
-			result_string += "Fizz ";
+			final_string = to_string(i);
 		}
-		else
-		{
-			result_string += to_string(i) + " ";
-		}
+		result_string += final_string + " ";
 	}
 }
 
 const string& FizzBuzzEnjoyer::FizzBuzzConstFunc()
 {
 	static string result_string = "";
+	string final_string = "";
 
 	for (int i = 1; i < 100; ++i)
 	{
-		if (i % 15 == 0)
+		final_string = "";
+
+		if (i % 3 == 0)
 		{
-			result_string += "FizzBuzz ";
-			continue;
+			final_string += "Fizz";
 		}
-		else if (i % 5 == 0)
+		if (i % 5 == 0)
 		{
-			result_string += "Buzz ";
+			final_string += "Buzz";
 		}
-		else if (i % 3 == 0)
+		if (final_string == "")
 		{
-			result_string += "Fizz ";
+			final_string = to_string(i);
 		}
-		else
-		{
-			result_string += to_string(i) + " ";
-		}
+		result_string += final_string + " ";
 	}
 	return result_string;
 }

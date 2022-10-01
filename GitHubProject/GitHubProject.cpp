@@ -9,6 +9,7 @@ using namespace std;
 
 int main()
 {
+    cout << FizzBuzzEnjoyer::FizzBuzzConstFunc() << endl;
     MyList<int> a = MyList<int>();
     //try 
     //{
