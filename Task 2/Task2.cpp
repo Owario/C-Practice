@@ -84,48 +84,54 @@ const string& FizzBuzzEnjoyer::FizzBuzzConstFunc()
 char* FizzBuzzEnjoyer::FizzBuzzCharFunc() 
 {
 	char* result_string = new char[1000];
-
+	const char f_ = 'F';
+	const char i_ = 'i';
+	const char z_ = 'z';
+	const char b_ = 'B';
+	const char u_ = 'u';
+	const char o_ = '0';
+	const char space_ = ' ';
 
 	int global_iterator = 0;
 	for (int i = 1; i < 100; ++i)
 	{
 		if (i % 15 == 0)
 		{
-			result_string[global_iterator++] = 'F';
-			result_string[global_iterator++] = 'i';
-			result_string[global_iterator++] = 'z';
-			result_string[global_iterator++] = 'z';
-			result_string[global_iterator++] = 'B';
-			result_string[global_iterator++] = 'u';
-			result_string[global_iterator++] = 'z';
-			result_string[global_iterator++] = 'z';
-			result_string[global_iterator++] = ' ';
+			result_string[global_iterator++] = f_;
+			result_string[global_iterator++] = i_;
+			result_string[global_iterator++] = z_;
+			result_string[global_iterator++] = z_;
+			result_string[global_iterator++] = b_;
+			result_string[global_iterator++] = u_;
+			result_string[global_iterator++] = z_;
+			result_string[global_iterator++] = z_;
+			result_string[global_iterator++] = space_;
 			continue;
 		}
 		else if (i % 5 == 0)
 		{
-			result_string[global_iterator++] = 'B';
-			result_string[global_iterator++] = 'u';
-			result_string[global_iterator++] = 'z';
-			result_string[global_iterator++] = 'z';
-			result_string[global_iterator++] = ' ';
+			result_string[global_iterator++] = b_;
+			result_string[global_iterator++] = u_;
+			result_string[global_iterator++] = z_;
+			result_string[global_iterator++] = z_;
+			result_string[global_iterator++] = space_;
 		}
 		else if (i % 3 == 0)
 		{
-			result_string[global_iterator++] = 'F';
-			result_string[global_iterator++] = 'i';
-			result_string[global_iterator++] = 'z';
-			result_string[global_iterator++] = 'z';
-			result_string[global_iterator++] = ' ';
+			result_string[global_iterator++] = f_;
+			result_string[global_iterator++] = i_;
+			result_string[global_iterator++] = z_;
+			result_string[global_iterator++] = z_;
+			result_string[global_iterator++] = space_;
 		}
 		else
 		{
 			if (i > 9) 
 			{
-				result_string[global_iterator++] = (int)(i/10) + '0';
+				result_string[global_iterator++] = (int)(i/10) + o_;
 			}
-			result_string[global_iterator++] = (i%10) + '0';
-			result_string[global_iterator++] = ' ';
+			result_string[global_iterator++] = (i%10) + o_;
+			result_string[global_iterator++] = space_;
 			
 		}
 	}
