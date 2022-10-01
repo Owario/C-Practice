@@ -3,26 +3,30 @@
 #include "../Task 3/prioritystack.h"
 #include "../Task 1/unlimitednum.h"
 #include "../Task 2/fizzbuzz.h"
+#include "../Task 4/containers.h"
+#include <list>
 using namespace std;
 
 int main()
 {
-    string mystring = FizzBuzzEnjoyer::FizzBuzzFunc();
-    cout<<mystring<<endl;
+    MyList<int> a = MyList<int>();
+    //try 
+    //{
+    //    a.PopFrontNode();
+    //}
+    //catch (const char* msg) 
+    //{
+    //    cout << msg << endl;
+    //}
 
-    mystring = "";
-    FizzBuzzEnjoyer::FizzBuzzParamFunc(mystring);
-    cout << mystring << endl;
-
-    mystring = "";
-    mystring = FizzBuzzEnjoyer::FizzBuzzConstFunc();
-    cout << mystring << endl;
-
-    char* my_char = FizzBuzzEnjoyer::FizzBuzzCharFunc();
-    int iterator = 0;
-    while (my_char[iterator] != '!') 
-    {
-        cout << my_char[iterator++];
-    }
+    a.PushBackNode(10);
+    a.PushBackNode(5);
+    a.PushFrontNode(15);
+    int b = a.PopFrontNode();
+    cout << b << endl;
+    /// <summary>
+    /// 15 10 5
+    /// </summary>
+    /// <returns></returns>
     return 0;
 }
