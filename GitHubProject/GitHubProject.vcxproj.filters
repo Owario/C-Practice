@@ -21,12 +21,18 @@
     <ClCompile Include="GitHubProject.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="..\Task 3\Task3.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Task 3\prioritystack.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="..\Task 1\unlimitednum.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Task 3\test_func.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

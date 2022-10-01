@@ -1,4 +1,6 @@
-#pragma once
+#ifndef UNLIM_NUMBER
+#define UNLIM_NUMBER
+
 //It will be better to decompose this file in separate classes but thank u no
 #include <string>
 #include <iostream>
@@ -33,3 +35,4 @@ public:
 	friend std::ostream& operator<< (std::ostream &os, const UnlimitedNumber &x);
 };
 
+#endif // !UNLIM_NUMBER

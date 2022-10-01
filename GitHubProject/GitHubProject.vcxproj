@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Task 1\Task1.cpp" />
+    <ClCompile Include="..\Task 3\Task3.cpp" />
     <ClCompile Include="GitHubProject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Task 1\unlimitednum.h" />
     <ClInclude Include="..\Task 3\prioritystack.h" />
+    <ClInclude Include="..\Task 3\test_func.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

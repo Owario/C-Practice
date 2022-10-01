@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PRIOR_STACK
+#define PRIOR_STACK
 #include <map>
 #include <list>
 #include <iostream>
@@ -47,22 +48,6 @@ void PriorityStack<T>::Push(int priority, T value)
 };
 
 
-template<> UnlimitedNumber PriorityStack<UnlimitedNumber>::Pop()
-{
-	if (IsEmpty() == true)
-	{
-		cout << "Exception, stack is empty!" << endl;
-		return UnlimitedNumber("");
-	}
-	int priority_ = mp.begin()->first;
-	UnlimitedNumber value = mp[priority_].front();
-	mp[priority_].pop_front();
-	if (mp[priority_].empty())
-	{
-		mp.erase(priority_);
-	}
-	return value;
-};
 template <class T>
 T PriorityStack<T>::Pop()
 {
@@ -82,7 +67,6 @@ T PriorityStack<T>::Pop()
 };
 
 
-
 template <class T>
 bool PriorityStack<T>::IsEmpty()
 {
@@ -94,3 +78,6 @@ void PriorityStack<T>::Clear()
 {
 	mp.clear();
 };
+
+
+#endif
