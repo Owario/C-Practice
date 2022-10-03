@@ -9,25 +9,18 @@ using namespace std;
 
 int main()
 {
-    cout << FizzBuzzEnjoyer::FizzBuzzConstFunc() << endl;
     MyList<int> a = MyList<int>();
-    //try 
-    //{
-    //    a.PopFrontNode();
-    //}
-    //catch (const char* msg) 
-    //{
-    //    cout << msg << endl;
-    //}
-
     a.PushBackNode(10);
     a.PushBackNode(5);
     a.PushFrontNode(15);
-    int b = a.PopFrontNode();
-    cout << b << endl;
-    /// <summary>
-    /// 15 10 5
-    /// </summary>
-    /// <returns></returns>
+    a.PushFrontNode(11);
+    a.PushFrontNode(12);
+    a.PushFrontNode(13);
+
+    for (int i = 0; i < a.GetSize(); ++i) 
+    {
+        cout << a[i] << endl;
+    }
+
     return 0;
 }

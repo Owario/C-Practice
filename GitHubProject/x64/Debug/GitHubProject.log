@@ -1,2 +1,7 @@
-﻿  Task2.cpp
+﻿  GitHubProject.cpp
+D:\Programms\C++\Github programms\GitHubProject\C-Practice\Task 1\unlimitednum.h(27,50): warning C4227: устаревший элемент: пропуск квалификаторов для ссылки
+D:\Programms\C++\Github programms\GitHubProject\C-Practice\Task 1\unlimitednum.h(29,50): warning C4227: устаревший элемент: пропуск квалификаторов для ссылки
+D:\Programms\C++\Github programms\GitHubProject\C-Practice\Task 4\containers.h(220): warning C4715: MyList<int>::operator[]: значение возвращается не при всех путях выполнения
+D:\Programms\C++\Github programms\GitHubProject\C-Practice\Task 4\containers.h(143): warning C4172: возвращение адреса локальной или временной переменной : temp
+D:\Programms\C++\Github programms\GitHubProject\C-Practice\Task 4\containers.h(153): warning C4172: возвращение адреса локальной или временной переменной : temp
   GitHubProject.vcxproj -> D:\Programms\C++\Github programms\GitHubProject\C-Practice\x64\Debug\GitHubProject.exe
