@@ -9,18 +9,25 @@ using namespace std;
 
 int main()
 {
+
     MyList<int> a = MyList<int>();
     a.PushBackNode(10);
     a.PushBackNode(5);
-    a.PushFrontNode(15);
-    a.PushFrontNode(11);
-    a.PushFrontNode(12);
-    a.PushFrontNode(13);
+    a.PushBackNode(50);
+    a.PushBackNode(25);
+    a.PushBackNode(35);
+    a.PushBackNode(45);
 
     for (int i = 0; i < a.GetSize(); ++i) 
     {
         cout << a[i] << endl;
     }
+    cout << a.PopBackNode() << endl;
+    //string b = string(a.PopBackNode());
+    //cout<<b<<endl;
+    //string c = string(a.PopBackNode());
+    //cout << b << endl;
+    //cout << c << endl;
 
     return 0;
 }

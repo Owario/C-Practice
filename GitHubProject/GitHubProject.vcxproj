@@ -131,6 +131,7 @@
     <ClCompile Include="..\Task 2\Task2.cpp" />
     <ClCompile Include="..\Task 3\Task3.cpp" />
     <ClCompile Include="..\Task 4\Task 4.cpp" />
+    <ClCompile Include="..\Task 5\Task5.cpp" />
     <ClCompile Include="GitHubProject.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +140,7 @@
     <ClInclude Include="..\Task 3\prioritystack.h" />
     <ClInclude Include="..\Task 3\test_func.h" />
     <ClInclude Include="..\Task 4\containers.h" />
+    <ClInclude Include="..\Task 5\matrix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

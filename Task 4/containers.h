@@ -37,9 +37,9 @@ public:
 
 	void PushFrontNode(T data);
 
-	T& PopFrontNode();
+	T PopFrontNode();
 
-	T& PopBackNode();
+	T PopBackNode();
 
 	bool IsClear();
 
@@ -129,7 +129,7 @@ void MyList<T>::PushFrontNode(T data)
 
 
 template <typename T>
-T& MyList<T>::PopFrontNode() 
+T MyList<T>::PopFrontNode() 
 {
 	if (IsClear())
 	{
@@ -155,7 +155,7 @@ T& MyList<T>::PopFrontNode()
 }
 
 template <typename T>
-T& MyList<T>::PopBackNode()
+T MyList<T>::PopBackNode()
 {
 	if (IsClear())
 	{

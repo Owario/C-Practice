@@ -32,6 +32,7 @@ string FizzBuzzEnjoyer::FizzBuzzFunc()
 void FizzBuzzEnjoyer::FizzBuzzParamFunc(string& result_string) 
 {
 	string final_string = "";
+	result_string = "";
 
 	for (int i = 1; i < 100; ++i)
 	{
